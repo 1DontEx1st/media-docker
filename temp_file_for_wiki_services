@@ -1,0 +1,33 @@
+### services and where to access them
+| service | purpose | container<br>maintainer | url / ports |
+| ------- | ------- | --------- | :---------: |
+| [plex](http://plex.tv) | movie / tv / music interface | [plexinc](https://hub.docker.com/r/plexinc/pms-docker/) | https://plex.${DOMAIN} <br> :32400 |
+| [traefik](https://traefik.io/) | reverse proxy | [traefik](https://hub.docker.com/_/traefik/) | https://traefik.${DOMAIN} <br> :80 <br> :443 |
+| [heimdall](https://heimdall.site/) | dashboard | [linuxserver](https://hub.docker.com/r/linuxserver/heimdall/) | https://heimdall.${DOMAIN} <br> :80 <br> :443 |
+| [sabnzbd](https://sabnzbd.org/) | nzb download | [linuxserver](https://hub.docker.com/r/linuxserver/sabnzbd/) | https://sab.${DOMAIN} <br> :8080 |
+| [nzbget](https://nzbget.net/) | nzb download | [linuxserver](https://hub.docker.com/r/linuxserver/nzbget/) | https://nzbget.${DOMAIN} <br> :6789 |
+| [ubooquity](https://vaemendis.net/ubooquity/) | book / comic interface | [linuxserver](https://hub.docker.com/r/linuxserver/ubooquity/) | https://ubooquity.${DOMAIN}/ubooquity <br> https://admin-ubooquity.${DOMAIN}/ubooquity/admin <br> :2202 <br> :2203 |
+| [transmission](https://transmissionbt.com/) | torrent download | [haugene](https://hub.docker.com/r/haugene/transmission-openvpn/) | https://transmission.${DOMAIN} <br> :9091 |
+| [hydra](https://github.com/theotherp/nzbhydra2) | nzb searcher | [linuxserver](https://hub.docker.com/r/linuxserver/hydra2/) | https://hydra.${DOMAIN} <br> :5075 |
+| [jackett](https://github.com/Jackett/Jackett) | torznab searcher | [linuxserver](https://hub.docker.com/r/linuxserver/jackett/) | https://jackett.${DOMAIN} <br> :9117 |
+| [sonarr](https://sonarr.tv/) | tv management | [linuxserver](https://hub.docker.com/r/linuxserver/sonarr/) | https://sonarr.${DOMAIN} <br> :8989 |
+| [radarr](https://radarr.video/) | movie management | [linuxserver](https://hub.docker.com/r/linuxserver/radarr/) | https://radarr.${DOMAIN} <br> :7878 |
+| [lidarr](https://lidarr.audio/) | music management | [linuxserver](https://hub.docker.com/r/linuxserver/lidarr/) | https://lidarr.${DOMAIN} <br> :8686 |
+| [bazarr](https://github.com/morpheus65535/bazarr) | subtitle management | [linuxserver](https://hub.docker.com/r/linuxserver/bazarr/) | https://bazarr.${DOMAIN} <br> :6767 |
+| [mylar](https://github.com/evilhero/mylar) | comic book management | [linuxserver](https://hub.docker.com/r/linuxserver/mylar/) | https://mylar.${DOMAIN} <br> :8090 |
+| [lazylibrarian](https://github.com/DobyTang/LazyLibrarian) | book management | [linuxserver](https://hub.docker.com/r/linuxserver/lazylibrarian/) | https://lazylibrarian.${DOMAIN} <br> :5299 |
+| [ombi](https://ombi.io/) | plex requests | [linuxserver](https://hub.docker.com/r/linuxserver/ombi/) | https://ombi.${DOMAIN} <br> :3579 |
+| [tautulli](https://tautulli.com/) | plex statistics | [tautulli](https://hub.docker.com/r/tautulli/tautulli/) | https://tautulli.${DOMAIN} <br> :8181 |
+| [oscarr](https://github.com/morpheus65535/oscarr) | plex sonarr/radarr/bazarr dashboard | [morpheus65535](https://hub.docker.com/r/morpheus65535/oscarr/) | https://oscarr.${DOMAIN} <br> :5656 |
+| [calibre web](https://github.com/janeczku/calibre-web) | web calibre client | [linuxserver](https://hub.docker.com/r/linuxserver/calibre-web/) | https://calibre.${DOMAIN} <br> :8083 |
+| [couchpotato](http://couchpota.to/) | movie downloader | [linuxserver](https://hub.docker.com/r/linuxserver/couchpotato/) | https://couchpotato.${DOMAIN} <br> :5050 |
+| [emby](https://emby.media/) | open media server | [emby](https://hub.docker.com/r/emby/embyserver/) | https://emby.${DOMAIN} <br> :8096 |
+| [htpcmanager](https://github.com/Hellowlol/HTPC-Manager) | dashboard / service organizer | [linuxserver](https://hub.docker.com/r/linuxserver/htpcmanager/) | https://htpcmanager.${DOMAIN} <br> :8085 |
+| [organizr](https://github.com/causefx/Organizr/) | dashboard / service organizer | [organizrtools](https://hub.docker.com/r/organizrtools/organizr-v2/) | https://organizr.${DOMAIN} <br> :8081 |
+| [portainer](https://portainer.io) | simple management UI for docker | [portainer](https://hub.docker.com/r/portainer/portainer/) | https://portainer.${DOMAIN} <br> :9000 |
+| [watchtower](https://github.com/v2tec/watchtower) | restarts refreshed containers | [v2tec](https://hub.docker.com/r/v2tec/watchtower/) | n/a |
+| [watcher](https://github.com/nosmokingbandit/Watcher3) | movie NZB & Torrent searcher | [linuxserver](https://hub.docker.com/r/linuxserver/watcher/) | https://watcher.${DOMAIN} <br> :9090 |
+| [muximux]() | php-based HTPC manager | [linuxserver](https://hub.docker.com/r/linuxserver/muximux/) | https://muximux.${DOMAIN} <br> :82 |
+| [beets](http://beets.io/) | music library manager | [linuxserver](https://hub.docker.com/r/linuxserver/beets/) | https://beets.${DOMAIN} <br> :8337 |
+| [cardigann](https://github.com/cardigann/cardigann) | indexing server | [linuxserver](https://hub.docker.com/r/linuxserver/cardigann/) | https://cardigann.${DOMAIN} <br> :5060 |
+| [headphones](https://github.com/rembo10/headphones) | music management | [linuxserver](https://hub.docker.com/r/linuxserver/headphones/) | https://headphones.${DOMAIN} <br> :8182 |
